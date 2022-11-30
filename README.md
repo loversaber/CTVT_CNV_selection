@@ -147,12 +147,12 @@ module load /software/CGP/modules/modulefiles/vcftools/0.1.16
 VCFTOOLS=$(which vcftools)
 VCFTOOLS_PATH=$(dirname $VCFTOOLS)
 
-# Define a specialised PATH for working with legacy platypus
+#Define a specialised PATH for working with legacy platypus
 PLATYPUS_PATH=/nfs/dog_n_devil/adrian/software/somatypus/src:/nfs/dog_n_devil/adrian/software/somatypus/utils:/nfs/dog_n_devil/adrian/software/platypus/bin:/usr/local/lsf/9.1/linux2.6-glibc2.3-x86_64/bin:/opt/renci/icommands//bin:/usr/local/lsf/9.1/linux2.6-glibc2.3-x86_64/etc:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/software/badger/bin:/software/oracle-ic-11.2:/software/bin:/software/CGP/bin:$VCFTOOLS_PATH
 PLATYPUS_LDFLAGS=-L/nfs/dog_n_devil/adrian/software/platypus/htslib-1.2.1
 PLATYPUS_LD_LIBRARY_PATH=/nfs/dog_n_devil/adrian/software/platypus/htslib-1.2.1
 
-# Run somatypus
+#Run somatypus
 somatypus=/nfs/users/nfs_k/kg8/lustre_ms/projects/ctvt_horizontal_transfer/scripts/somatypus/src/somatypus
 
 PATH=$PLATYPUS_PATH \
